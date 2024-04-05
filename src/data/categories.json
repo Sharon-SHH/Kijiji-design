@@ -1,0 +1,88 @@
+[
+  {
+    "id": "1",
+    "title": "Vehicles",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/truck.svg"
+  },
+  {
+    "id": "2",
+    "title": "Real Estate",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/house.svg"
+  },
+  {
+    "id": "3",
+    "title": "Job",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/work.svg"
+  },
+  {
+    "id": "4",
+    "title": "Electronics",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/laptop.svg"
+  },
+  {
+    "id": "5",
+    "title": "Apparel",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/style.svg"
+  },
+  {
+    "id": "6",
+    "title": "Entertainment",
+    "image": "https://maxcdn.icons8.com/packs/preview-icon/characters.svg"
+  },
+  {
+    "id": "7",
+    "title": "Family",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/heart.svg"
+  },
+  {
+    "id": "8",
+    "title": "Home Goods",
+    "image": "https://maxcdn.icons8.com/packs/preview-icon/household.svg"
+  },
+  {
+    "id": "9",
+    "title": "Forniture",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/map.svg"
+  },
+  {
+    "id": "9",
+    "title": "Tools",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/tools.svg"
+  },
+  {
+    "id": "10",
+    "title": "Musical Instruments",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/music.svg"
+  },
+  {
+    "id": "11",
+    "title": "Sports",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/sport.svg"
+  },
+  {
+    "id": "12",
+    "title": "Gardening and Outdoor",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/travel.svg"
+  },
+  {
+    "id": "13",
+    "title": "Toys and Games",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/games.svg"
+  },
+
+  {
+    "id": "14",
+    "title": "Education",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/brain.svg"
+  },
+  {
+    "id": "15",
+    "title": "Networking",
+    "image": "https://maxcdn.icons8.com/trends/preview-icon/networking.svg"
+  },
+  {
+    "id": "15",
+    "title": "Free Stuff",
+    "image": "https://maxcdn.icons8.com/packs/preview-icon/finance.svg"
+  }
+]

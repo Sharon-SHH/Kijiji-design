@@ -1,0 +1,64 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/global.scss" as *;
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $secondary-alabaster;
+  width: 90%;
+  border: 0.0625rem solid $primary-silver;
+  border-radius: 0.7rem;
+  padding: 1.25rem;
+  margin-top: 5rem;
+  align-self: center;
+  // margin: 5rem 2rem;
+  gap: 1rem;
+
+  &__card {
+    border: 0.0625rem solid $primary-silver;
+    display: flex;
+    width: 50%;
+    // flex-direction: column;
+    border-radius: 0.7rem;
+    padding: 0.2rem 1rem;
+    align-items: center;
+  }
+
+  &__picture {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1.25rem;
+    align-self: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    color: $primary-black;
+    width: auto;
+    gap: 1rem;
+  }
+  .fa-check-circle {
+    margin-left: 0.625rem;
+  }
+
+  &__description {
+    color: $primary-black;
+    margin: 0.3125rem 0;
+
+    strong {
+      color: $primary-black;
+    }
+  }
+}

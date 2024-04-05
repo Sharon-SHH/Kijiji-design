@@ -1,0 +1,47 @@
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/global.scss" as *;
+
+
+.container {
+  display: flex;
+  flex: 1;
+  @include tablet-breakpoint {
+    margin-top: $header-tablet-height;
+  }
+  @include desktop-breakpoint {
+    margin-top: $header-component-height;
+  }
+}
+
+.sidebar {
+  display: none;
+  width: 0;
+  @include tablet-breakpoint {
+    display: block;
+    background-color: #f0f0f0;
+    width: 200px;
+    position: fixed;
+    top: $header-tablet-height; /* Adjust based on header height */
+    bottom: 0;
+    left: 0;
+    overflow-y: auto; /* Allow scrolling if content exceeds sidebar height */
+  }
+  @include desktop-breakpoint {
+     top: $header-component-height; 
+  }
+}
+
+.main {
+  padding: 1rem;
+  
+  &__titleName {
+    color: $primary-silver;
+    padding-bottom: 1rem;
+  }
+  @include tablet-breakpoint {
+    flex: 1;
+    margin-left: 200px; /* Adjust based on sidebar width */
+  }
+}
