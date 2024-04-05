@@ -1,0 +1,122 @@
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/variables" as *;
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+
+  @include tablet-breakpoint {
+    padding: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include desktop-breakpoint {
+    // margin: auto;
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 6rem;
+  }
+
+  &--mobile {
+    display: flex;
+
+    @include tablet-breakpoint {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+    @include tablet-breakpoint {
+      display: flex;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: white;
+    }
+    @include desktop-breakpoint {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+    @include desktop-breakpoint {
+      display: flex;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: white;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    // width: 100%;
+    @include tablet-breakpoint {
+      margin: 0 4rem;
+    }
+  }
+
+  &__image {
+    padding: 0.5rem;
+    &--logo {
+      width: auto;
+      height: 3rem;
+    }
+
+    &--search {
+      width: 100%;
+      padding-top: 0;
+      width: fit-content;
+      height: 6rem;
+      padding-top: 0.5rem;
+
+      @include tablet-breakpoint {
+        width: fit-content;
+        height: 6rem;
+        padding-top: 0.5rem;
+        margin: auto;
+      }
+
+      @include desktop-breakpoint {
+        width: auto;
+        height: 3.5rem;
+        padding-top: 0.5rem;
+      }
+    }
+
+    &--icons {
+      width: auto;
+      height: 3.5rem;
+    }
+
+    &--bell,
+    &--account,
+    &--chat {
+      width: auto;
+      height: 3.5rem;
+    }
+
+    &--button {
+      width: auto;
+      height: 3.5rem;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

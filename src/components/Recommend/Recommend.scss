@@ -1,0 +1,54 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/resets" as *;
+
+.product-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+}
+
+.product-card {
+  border: 1px solid $primary-silver;
+  border-radius: 0.5rem;
+  background-color: $secondary-alabaster;
+  width: 25rem;
+  height: auto;
+
+  @include tablet-breakpoint {
+    max-width: 16rem;
+  }
+
+  &__title {
+    @include mobile-tablet-subheader-text-style;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+  }
+  &__image {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: 0.1rem;
+  }
+
+  &__price,
+  &__category,
+  &__seller,
+  &__contact {
+    @include mobile-tablet-body-text-style;
+    margin-bottom: 0.25rem;
+  }
+  &__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+  }
+  &__icon {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+}

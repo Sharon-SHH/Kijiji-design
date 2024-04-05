@@ -1,0 +1,35 @@
+@use "./styles/partials/mixin" as *;
+@use "./styles/partials/resets" as *;
+@use "./styles/partials/variables" as *;
+
+.mobile {
+  width: 100%;
+  // position: sticky;
+  // top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @include tablet-breakpoint {
+    display: none;
+  }
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  z-index: 1;
+  @include tablet-breakpoint {
+    background-color: white;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
